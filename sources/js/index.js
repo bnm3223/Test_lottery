@@ -88,6 +88,8 @@ checkNum.addEventListener('click', function () {
             result.textContent = `${userNumber} คุณถูกรางวัลข้างเคียง`;
         } else if (userNumber == intData[3] || userNumber == intData[4] || userNumber == intData[5]) {
             result.textContent = `${userNumber} คุณถูกรางวัลที่ 2`;
+        } else {
+            result.textContent = `${userNumber} ไม่ถูกรางวัลใดเลย`;
         }
 
     }
