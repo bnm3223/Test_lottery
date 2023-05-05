@@ -1,0 +1,120 @@
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-size: 50%; // 1rem = 8px
+    @include mq($from: mobile) {
+        font-size: 56.25%; // 1rem = 9px
+    }
+    @include mq($from: tablet) {
+        font-size: 62.5%; // 1rem = 10px
+    }
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font, $fonts-fallback;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: $normal;
+    color: $theme-color-black;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100%;
+    background-color: $theme-background-color-white;
+    @include mq($until: mobile) {
+        font-size: 1.4rem;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%; /* [1] */
+    font-style: italic; /* [2] */
+    vertical-align: middle; /* [3] */
+    width: auto;
+    height: auto;
+}
+
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+main {
+    width: 100%;
+    // height: 90vh;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    background-color: $theme-background-color-black;
+    // height: 10vh;
+    > h1 {
+        color: $theme-color-blue;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: $transition;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    @include mq($from: mobile) {
+        width: 60%;
+    }
+    tr {
+        td,
+        .td {
+            padding: 1rem 0;
+            text-align: center;
+            background-color: $theme-background-color-white;
+            border: 0.1rem solid $theme-background-color-black;
+            width: 50%;
+            font-size: 2rem;
+            line-height: 1.2;
+            font-weight: bold;
+            @include mq($from: tablet) {
+              line-height: 1.5;
+            }
+            &--2 {
+                width: 25%;
+            }
+            &:first-child {
+                background-color: $theme-background-color-black;
+                border-top: 0.1rem solid $theme-background-color-white;
+                border-bottom: 0.1rem solid $theme-background-color-white;
+                > h3 {
+                    color: $theme-color-white;
+                }
+            }
+        }
+    }
+}

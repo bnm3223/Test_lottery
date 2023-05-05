@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>รางวัลล็อตเตอรี่ </title>
+    <!-- Diversition -->
+</head>
+
+<body>
+    <header>
+        <h1>รางวัลล็อตเตอรี่</h1>
+    </header>
+    <main>
+        <div class="award">
+            <div class="wrapper">
+                <div class="result">
+                    <div class="result__header">
+                        <h2>ผลการออกรางวัลล็อตเตอรี่</h2>
+                        <button class="btn" id="randomnumber">ดำเนินการสุ่มรางวัล</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h3>รางวัลที่ 1</h3>
+                            </td>
+                            <td colspan="2" id="1reward"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h3>รางวัลเลขข้างเคียงรางวัลที่ 1</h3>
+                            </td>
+                            <td class="td td--2" id="2reward"></td>
+                            <td class="td td--2" id="3reward"></td>
+                        </tr>
+                        <tr>
+                            <td class="td td--2">
+                                <h3>รางวัลที่ 2</h3>
+                            </td>
+                            <td class="td td--2" id="4reward"></td>
+                            <td class="td td--2" id="5reward"></td>
+                            <td class="td td--2" id="6reward"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h3>รางวัลเลขท้าย 2 ตัว</h3>
+                            </td>
+                            <td colspan="2" id="7reward"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="check">
+                    <div class="check__header">
+                        <h2>ตรวจรางวัลล็อตเตอรี่</h2>
+                    </div>
+                    <div class="check__container">
+                        <form action="" id="form">
+                            <label for="lottery-number"><span class="h3">เลขล็อตเตอรี่ :</span></label>
+                            <input type="text" id="lottery-number" name="lottery-number" value="" maxlength="3" >
+                        </form>
+                        <button class="btn" id="checknumber">ตรวจสอบรางวัล</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

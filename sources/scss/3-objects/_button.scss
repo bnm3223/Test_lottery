@@ -1,0 +1,48 @@
+.btn,
+input[type="submit"] {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border: 0.1rem solid $theme-background-color-black;
+  border-radius: 2rem;
+  background: transparent;
+  font-family: $font-title, $fonts-fallback;
+  font-weight: $bold;
+  color: $theme-color-black;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition;
+  @include mq($from: 550, $until: mobile) {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+  }
+  &:hover {
+    background-color: $theme-background-color-black;
+    color: $theme-color-white;
+    i {
+      filter: brightness(0) saturate(100%);
+    }
+  }
+}
+
+input {
+  font-size: 2rem;
+  line-height: 1.2;
+  border: 0.1rem solid $theme-background-color-black;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  @include mq($from: tablet) {
+    line-height: 1.5;
+  }
+  @include mq($until: 450) {
+    margin-left: 0;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0.5rem $theme-background-color-black;
+  }
+}

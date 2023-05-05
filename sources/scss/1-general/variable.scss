@@ -1,0 +1,37 @@
+/* ==========================================================================
+  Variables for colors
+========================================================================== */
+// color
+$color-black: #212529;
+$color-white: #f8f9fa;
+$color-blue: #19c9f0;
+$color-yellow: #fec107;
+// background-color
+$theme-background-color-black: $color-black;
+$theme-background-color-white: $color-white;
+$theme-background-color-yellow: $color-yellow;
+$theme-background-color-blue: $color-blue;
+// text-color
+$theme-color-white: $color-white;
+$theme-color-black: $color-black;
+$theme-color-blue: $color-blue;
+
+/* ==========================================================================
+  Variables for fonts
+========================================================================== */
+// 1. font-family
+$fonts-fallback: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$font-kanit: "Kanit";
+$font: $font-kanit;
+$font-title: $font-kanit;
+
+// 2. font-weight
+$light: 300;
+$normal: normal;
+$medium: 500;
+$bold: bold;
+
+/* ==========================================================================
+  Variables for animations
+========================================================================== */
+$transition: all 0.4s ease-in-out;

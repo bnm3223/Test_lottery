@@ -1,0 +1,24 @@
+.award {
+    .result {
+        &__header {
+            margin-top: 1rem;
+        }
+    }
+    .check {
+        margin-top: 1rem;
+        border: 0.1rem solid $theme-background-color-black;
+        &__header {
+            padding: 0.5rem 2rem;
+            background-color: $theme-background-color-blue;
+            > h2 {
+                text-align: left;
+                color: $theme-color-white;
+            }
+        }
+        &__container {
+            padding: 0.5rem 2rem;
+
+        }
+    }
+  
+}

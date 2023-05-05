@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $font-title, $fonts-fallback;
+  font-weight: $bold;
+  color: $theme-color-black;
+  margin: 0;
+}
+h1,
+.h1 {
+  font-size: 6.2rem;
+  line-height: 1.2;
+  @include mq($until: tablet) {
+    font-size: 3.2rem;
+  }
+}
+h2,
+.h2 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  @include mq($until: tablet) {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+h3,
+.h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+  @include mq($from: tablet) {
+    line-height: 1.5;
+  }
+}
+
+.subtitle1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: $light;
+  @include mq($until: tablet) {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
